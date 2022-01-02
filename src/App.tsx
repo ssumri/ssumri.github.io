@@ -1,15 +1,25 @@
 import React from 'react';
-import Header from './views/partials/Header';
-import Info from './views/partials/Info';
-import './resources/css/App.css';
+import {Container} from './resources/styled/Container'
+import SHeader from './views/components/Header';
+import Footer from './views/components/Footer';
+import Info from './views/components/Info';
+import './resources/styled/App.css';
+import { Glstyle } from './resources/styled/Globals';
+
+
 
 class App extends React.Component{
   render() {
     return (
-      <div className="App">
-        <Header />
+      <>
+        <Glstyle />
+        <SHeader />
+        <Container>
+          <h1> hello </h1>
+        </Container>
         <Info />
-      </div>
+        <Footer/>
+      </>
     );
   }
 }

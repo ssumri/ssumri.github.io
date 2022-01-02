@@ -1,6 +1,11 @@
-.App {
+.info-tabs {
   text-align: center;
-  background-color: #b89b9b;
+  background-color: #e8b298;
+}
+
+.info-contact {
+  text-align: center;
+  background-color: #9daaa2;
 }
 
 body {

@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './resources/css/index.css';
+import './resources/styled/index.css';
 import App from './App';
 import reportWebVitals from './resources/ts/reportWebVitals';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
+  body{
+    background-color: #feebca;
+  }
+`
 
 ReactDOM.render(
   <React.StrictMode>
+    <GlobalStyle/>
     <App />
   </React.StrictMode>,
   document.getElementById('root')
