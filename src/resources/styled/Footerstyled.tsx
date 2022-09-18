@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const SFooter = styled("div")`
-    background-color: #555548;
-    color: d6cfa5;
+    background-color: #2b6358;
+    color: #c7dbd3;
     padding: 10px 0 10px;
 
     ul {

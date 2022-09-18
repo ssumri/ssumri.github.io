@@ -15,7 +15,6 @@ class App extends React.Component{
         <Glstyle />
         <SHeader />
         <Container>
-          <h1> hello </h1>
         </Container>
         <Info />
         <Footer/>

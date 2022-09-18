@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
 export const SHeader = styled("header")`
-  background-color: #c5c4b2;
-  padding: 20px 10px;
+  background-color: #f3e6cd;
+  padding: 0px 5px;
 
   h1 {
-    color: #60412b
+    color: #92413a;
+    font-size: 50px;
   }
 `
 
@@ -26,8 +27,6 @@ export const StyledSocialIcons = styled("div")`
   justify-content: center;
 
   a {
-    border: 1px solid #fff;
-    border-radius: 50%;
     color: #60412b;
     display: inline-flex;
     align-items: center;
@@ -37,5 +36,12 @@ export const StyledSocialIcons = styled("div")`
     width: 40px;
     text-decoration: none;
   }
+
+  &:hover{
+    opacity: 0.8;
+    transform: scale(0.95);
+    color: #06170e;
+  }
+
 `
 
