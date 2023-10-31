@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   margin-top: 10rem;
+  background-image: linear-gradient(90deg, #274b74, #823365);
 
   header {
     text-align: center;

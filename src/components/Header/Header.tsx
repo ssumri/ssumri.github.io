@@ -1,44 +1,19 @@
 import { Container } from "./styles";
 import { BrowserRouter as Router } from "react-router-dom";
-import { NavHashLink, HashLink } from "react-router-hash-link";
+import { HashLink } from "react-router-hash-link";
 import { useState } from "react";
 
 export function Header() {
   const [isActive, setActive] = useState(false);
 
-  function toggleTheme() {
-    let html = document.getElementsByTagName("html")[0];
-    html.classList.toggle("light");
-  }
-
-  function closeMenu() {
-    setActive(false);
-  }
-
   return (
     <Container className="header-fixed">
       <Router>
         <HashLink smooth to="#home" className="logo">
-          <span>Samriddhi </span>
-          <span>Lamichhane</span>
+          <span>Sami</span>
         </HashLink>
 
-        <input
-          onChange={toggleTheme}
-          className="container_toggle"
-          type="checkbox"
-          id="switch"
-          name="mode"
-        />
-        <label htmlFor="switch">Toggle</label>
-
         <nav className={isActive ? "active" : ""}>
-          <NavHashLink smooth to="#home" onClick={closeMenu}>
-            Home
-          </NavHashLink>
-          <NavHashLink smooth to="#contact" onClick={closeMenu}>
-            Contact
-          </NavHashLink>
           <a
             href={
               "https://drive.google.com/file/d/1PCrjxW8JcSwXFSKrXFUidj5QCYkgPX6I/view?usp=sharing"
@@ -48,7 +23,6 @@ export function Header() {
             Resume
           </a>
         </nav>
-
         <div
           aria-expanded={isActive ? "true" : "false"}
           aria-haspopup="true"

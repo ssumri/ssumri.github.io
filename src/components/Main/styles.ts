@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
-
 export const Container = styled.main`
   position: relative;
   z-index: 0;
   padding: 0 10rem;
   overflow-x: hidden;
-  #tsparticles{
+  #tsparticles {
     position: absolute;
     left: 0;
     top: 0;
@@ -14,12 +13,13 @@ export const Container = styled.main`
     height: 100%;
     z-index: -1;
   }
+  background-image: linear-gradient(90deg, #274b74, #823365);
 
-  @media (max-width: 740px){
+  @media (max-width: 740px) {
     padding: 0 4rem;
   }
 
-  @media(max-width: 360px){
+  @media (max-width: 360px) {
     padding: 0 2rem;
   }
-`
+`;

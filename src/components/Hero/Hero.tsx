@@ -3,15 +3,11 @@ import { Container } from "./styles";
 import { NavHashLink } from "react-router-hash-link";
 import linkedin from "../../assets/linkedin.svg";
 import githubIcon from "../../assets/github.svg";
-import whatsapp from "../../assets/whatsapp.svg";
-import Hello from "../../assets/Hello.gif";
 export function Hero() {
   return (
     <Container id="home">
       <div className="hero-text">
-        <p>
-          Hello <img src={Hello} alt="Hello" width="20px" />, I'm
-        </p>
+        <p>Hello, I'm</p>
         <h1>Samriddhi Lamichhane</h1>
         <h3>Software Engineer</h3>
         <p className="small-resume">New-Grad</p>
